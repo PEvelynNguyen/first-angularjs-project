@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js">
+
+    </script>
     <script src"app.js"></script>
     <title>My First AngularJS App</title>
   </head>
   <body>
     <div ng-controller="myFirstController">
-    <h1>My First AngularJS App</h1>
-
+      <h1>My First AngularJS App</h1>
+      <input type="text" ng-model="name">
+      Inside my input is {{name}}
     </div>
   </body>
 </html>

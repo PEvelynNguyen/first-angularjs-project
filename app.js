@@ -1,4 +1,11 @@
 (function (){
+  'use strict';
 
-  angular.module('myFirstApp', []);
+  var myApp = angular.module('myFirstApp', [])
+    .controller('myFirstController', function($scope) {
+    $scope.name="Evelyn";
+    $scope.sayYourName = function(){
+      return "my name is Evelyn";
+    };
+  });
 })();
